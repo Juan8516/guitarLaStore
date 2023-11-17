@@ -1,6 +1,8 @@
 import {
-    Meta
+    Meta, 
+    Links
 }from '@remix-run/react'
+import styles from './styles/index.css'
 
 export function meta() {
     return [
@@ -8,7 +10,16 @@ export function meta() {
         {charset: 'utf-8' },
         {title: 'GuitarLA - Remix'},
         {viewport: 'width=device-width, initial-scale=1'}
-        
+
+    ]
+}
+
+export function links() {
+    return [
+        {
+            rel: 'stylesheet',
+            href: styles
+        }
     ]
 }
 
@@ -25,6 +36,7 @@ function Document({ children }) {
         <html lang='es'>
             <head>
                 <Meta />
+                <Links />
             </head>
             <body>
                 { children }
