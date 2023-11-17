@@ -1,11 +1,15 @@
+import {
+    Meta
+}from '@remix-run/react'
+
 export function meta() {
-    return(
-        {
-            charset: 'utf-8',
-            title: 'GuitarLA - Remix',
-            viewport: 'width=device-width, initial-scale=1'
-        }
-    )
+    return [
+        
+        {charset: 'utf-8' },
+        {title: 'GuitarLA - Remix'},
+        {viewport: 'width=device-width, initial-scale=1'}
+        
+    ]
 }
 
 export default function App() {
@@ -20,7 +24,7 @@ function Document({ children }) {
     return (
         <html lang='es'>
             <head>
-                
+                <Meta />
             </head>
             <body>
                 { children }
