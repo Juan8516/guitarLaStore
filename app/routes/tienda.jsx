@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Nosotros() {
+function Tienda() {
   return (
     <div>
-      Nosotros ...
+      Tienda ...
     </div>
   )
 }
 
-export default Nosotros
+export default Tienda
