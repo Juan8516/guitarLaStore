@@ -7,7 +7,7 @@ function Header() {
     <header className='header'>
         <div className='contenedor barra'>
             <Link src='/'>
-                <img src={logo} alt="Logo LA" />
+                <img className='logo' src={logo} alt="Imagen logo" />
             </Link>
             <nav className='navegacion'>
                 <Link
