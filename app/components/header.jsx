@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from '@remix-run/react'
+import logo from '../../public/img/logo.svg'
 
 function Header() {
   return (
     <header className='header'>
         <div className='contenedor barra'>
             <div className='logo'>
-
+                <img src={logo} alt="Logo LA" />
             </div>
             <nav className='navegacion'>
                 <Link
@@ -21,7 +22,6 @@ function Header() {
                 <Link
                     to='/blog'
                 >Blog</Link>
-                
             </nav>
         </div>
     </header>
