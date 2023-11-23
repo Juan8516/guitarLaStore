@@ -77,7 +77,7 @@
     transition-duration: 300ms;
   }
   .header .navegacion a:hover, 
-  .active {
+  .header .active {
     background-color: var(--primary);
   }
 
